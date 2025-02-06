@@ -57,3 +57,10 @@
       @warn "Breakpoint '#{$breakpoint}' não existe no mapa de breakpoints.";
     }
   }
+
+
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

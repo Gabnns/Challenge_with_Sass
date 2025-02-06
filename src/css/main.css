@@ -23,6 +23,20 @@ a {
   color: inherit;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(229, 6%, 66%);
+  padding: 20px 0;
+  font-family: "Roboto", "sans-serif";
+}
+.footer a:hover {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
 .text-section {
   color: hsl(234, 12%, 34%);
   padding: 4rem;

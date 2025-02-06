@@ -4,11 +4,12 @@
   "description": "Challenge with sass",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch src/scss/main.scss:src/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gabnns",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.83.4"
+    "sass": "^1.84.0"
   }
 }
