@@ -1,0 +1,40 @@
+// BLOCOS DE EFEITOS/ESTILIZAÇÃO/RESPONSIVIDADE PARA SEREM REUTILIZADOS
+@use '../abstracts/variables' as vars;
+
+@mixin section-default {
+    color: vars.$neutral-blue-dark;
+    padding: 4rem;
+    font-size: vars.$font-size-default;
+}
+
+@mixin card {
+    width: 100%;
+    min-width: 440px;
+    max-width: 550px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: vars.$padding / 2;
+    color: vars.$neutral-blue;
+    padding: vars.$padding / 2;
+    border-radius: vars.$border-radius;
+    box-shadow: vars.$border-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h2 {
+        font-size: vars.$font-size-subtitle;
+        font-weight: vars.$font-wgt-600;
+        color: vars.$neutral-blue-dark;
+        margin-bottom: vars.$padding / 3;
+    }
+
+    p {
+        font-size: vars.$font-size-default;
+        font-weight: vars.$font-wgt-400;
+        letter-spacing: .5px;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}

@@ -1,0 +1,51 @@
+// ÁREA MAIS EXTENSA QUE OCUPA UM OU MAIS COMPONENTES. EXEMPLO: NAVBAR.
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+// Estilos para a seção de texto
+.text-section {
+  @include mix.section-default;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    letter-spacing: .5px;
+
+    h1 {
+      font-size: vars.$font-size-title;
+      font-weight: vars.$font-wgt-200;
+      margin-bottom: 1rem;
+    }
+  
+    span {
+      font-weight: vars.$font-wgt-600;
+    }
+  
+    p {
+      line-height: 20px;
+      max-width: 600px;
+    }
+  }
+
+.grid-section {
+  @include mix.section-default;
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: 10px;
+  .card:nth-child(1) {
+    border-top: 5px solid vars.$detail-cyan;
+  }
+  .card:nth-child(2) {
+    border-top: 5px solid vars.$detail-red;
+  }
+  .card:nth-child(3) {
+    border-top: 5px solid vars.$detail-orange;
+  }
+  .card:nth-child(4) {
+    border-top: 5px solid vars.$detail-blue;
+  }
+}
+
+.card{
+@include mix.card;
+}

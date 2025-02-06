@@ -1,0 +1,8 @@
+// ARQUIVO ONDE IMPORTO TODOS OS OUTROS AQUIVOS SCSS PARA SEREM COMPILADOS NO CSS.
+
+@use 'abstracts/mixins';
+@use 'abstracts/variables';
+@use 'base/reset';
+@use 'components/exemploComponente';
+@use 'layouts/sections';
+

@@ -1,0 +1,32 @@
+// VARIÁVEIS DISPONIVÉIS PARA SEREM USADAS NO PROJETO.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// COLORS
+$detail-red: hsl(0, 78%, 62%);
+$detail-cyan: hsl(180, 62%, 55%);
+$detail-orange: hsl(34, 97%, 64%);
+$detail-blue: hsl(212, 86%, 64%);
+
+$neutral-blue-dark:hsl(234, 12%, 34%);
+$neutral-blue:hsl(229, 6%, 66%);
+$neutral-gray-ligth:hsl(0, 0%, 98%);
+
+// FONT FAMILY & WEIGHTS
+$font-family: 'Roboto', 'sans-serif';
+$font-wgt-200: 200;
+$font-wgt-400: 400;
+$font-wgt-600: 600;
+
+// FONT SIZE
+$font-size-default: 17px;
+$font-size-title: 3rem;
+$font-size-subtitle: 1.8rem;
+
+// SPACING
+$padding: 4rem;
+
+// BORDER-RADIUS
+$border-radius: 6px;
+$border-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

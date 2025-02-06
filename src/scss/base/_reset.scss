@@ -1,0 +1,26 @@
+// RESET DA PÁGINA DA WEB (PADRÃO)
+@use '../abstracts/variables' as vars;
+
+/* Reset básico para remover margens, paddings e estilos padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vars.$font-family;
+  background-color: vars.$neutral-gray-ligth;
+}
+
+/* Remover estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover decoração de links e definir cores consistentes */
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
